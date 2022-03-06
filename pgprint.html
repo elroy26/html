@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>TechFacts.com</title>
+  <link href='https://fonts.googleapis.com/css?family=Shizuru' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<style media="screen">
+  h1 {
+    font-size: 70px;
+  }
+
+  h2 {
+    font-size: 35px;
+    color: #072260;
+
+  }
+
+  strong {
+    padding: 20px;
+    font-size: 20px;
+    color: #043f6c;
+
+  }
+
+  p {
+    padding: 35px;
+
+  }
+
+  hr.ne {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: #e9e9e9;
+  }
+
+  .topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .topnav a.active {
+    background-color: #2cbd6c;
+    color: white;
+  }
+
+  .topnav .search-container {
+    float: right;
+  }
+
+  .topnav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+  }
+
+  .topnav .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .topnav .search-container button:hover {
+    background: #ccc;
+  }
+
+  @media screen and (max-width: 600px) {
+    .topnav .search-container {
+      float: none;
+    }
+
+    .topnav a,
+    .topnav input[type=text],
+    .topnav .search-container button {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+
+    .topnav input[type=text] {
+      border: 1px solid #ccc;
+    }
+  }
+
+  body {
+    font-family: "Lato", sans-serif;
+  }
+
+  .sidenav {
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #15d6e7;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidenav {
+      padding-top: 15px;
+    }
+
+    .sidenav a {
+      font-size: 18px;
+    }
+  }
+
+  body {
+    width: available;
+    height: available;
+  }
+
+  .container {
+    width: available;
+    height: available;
+  }
+
+  .leftpane {
+    width: 20%;
+    min-width: 350px;
+    height: 1px;
+    min-height: 400px;
+    float: left;
+    background-color: #1c042f;
+    border-collapse: collapse;
+  }
+
+  .middlepane {
+    width: 60%;
+    min-width: 800px;
+    height: available;
+    min-height: 650px;
+    float: left;
+    background-color: white;
+    border-collapse: collapse;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+  }
+</style>
+
+<body bgcolor="#1c042f">
+  <h1 align='center' style="color:#13dea9; font-family:Shizuru;"><i><b>TechFacts.com</b></i>
+  </h1>
+  <hr color='#3d80dd'>
+
+  <div class="topnav">
+    <a class="active" href="project1.html">Home</a>
+    <a href="news.html">News</a>
+    <a href="login.html">Login</a>
+    <a href="aboutus.html">AboutUs</a>
+    <a href="contactus.html">ContactUs</a>
+    <div class="search-container">
+      <form action="/action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+  </div>
+  <hr color='#3d80dd'><br>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <hr class="ne"> <a href="pgmsoffice.html">Microsoft Office suits</a>
+    <hr class="ne">
+    <a href="pgmic.html">Microphone and Audio interfaces</a>
+    <hr class="ne">
+    <a href="pgwifi.html">Wifi Connectivity</a>
+    <hr class="ne">
+    <a href="pgmob.html">Smartphones</a>
+    <hr class="ne">
+    <a href="pgpc.html"> PC and Laptops</a>
+    <hr class="ne">
+    <a href="pgprint.html">Printers and Scanners</a>
+    <hr class="ne">
+  </div>
+
+  <div id="main" class="leftpane">
+
+    <span style="font-size:30px;color:#13dea9;cursor:pointer" onclick="openNav()">&#9776; open</span>
+  </div>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+    }
+  </script>
+  <div class="container">
+
+
+    <div class="middlepane">
+      <h2 padding=" 32px" align='center' style="font-family:Josefin Sans;">Printers and Scanners
+        <hr class="ne">
+      </h2>
+      <p style="padding: 35px;">
+      <strong>What is a printer?</strong><br><br>A printer is a device that accepts text and graphic output from a computer and transfers the information to paper, usually to standard-size, 8.5" by 11" sheets of paper. Printers vary in size, speed, sophistication and cost. In general, more expensive printers are used for more frequent printing or high-resolution color printing.<br>
+
+Personal computer printers can be distinguished as impact or non-impact printers. Early impact printers worked something like an automatic typewriter, with a key striking an inked impression on paper for each printed character. The dot matrix printer, an impact printer that strikes the paper a line at a time, was a popular low-cost option.<br>
+
+The best-known non-impact printers are the inkjet printer and the laser printer. The inkjet sprays ink from an ink cartridge at very close range to the paper as it rolls by, while the laser printer uses a laser beam reflected from a mirror to attract ink (called toner) to selected paper areas as a sheet rolls over a drum.<br><br>
+<strong>Different types of printers</strong><br><br>There are many different printer manufacturers available today, including Canon, Epson, Hewlett-Packard, Xerox and Lexmark, among many others. There are also several types of printers to choose from, which we'll explore below.<br>
+
+<b>Inkjet printers </b> recreate a digital image by spraying ink onto paper. These are the most common type of personal printer.<br>
+<b>Laster printers</b> are used to create high-quality prints by passing a laser beam at a high speed over a negatively charged drum to define an image. Color laser printers are more often found in professional settings.<br>
+<b>3D printers</b> are a relatively new printer technology. 3D printing creates a physical object from a digital file. It works by adding layer upon layer of material until the print job is complete and the object is whole.<br>
+<b>Thermal printers</b> produce an image on paper by passing paper with a thermochromic coating over a print head comprised of electrically heated elements and produces an image in the area where the heated coating turns black. A dye-sublimation printer is a form of thermal printing technology that uses heat to transfer dye onto materials.<br>
+<b>All-in-one printers</b> are multifunction devices that combine printing with other technologies such as a copier, scanner and/or fax machine.<br>
+<b>LED printers</b> are similar to laser printers but use a light-emitting diode array in the print head instead of a laser.<br>
+<b>Photo printers</b> are similar to inkjet printers but are designed specifically to print high-quality photos, which require a lot of ink and special paper to ensure the ink doesn't smear.<br><br>
+<strong>Features to look for in a printer</strong><br>The four printer qualities of most interest to users are:<br>
+
+<b>Color:</b> Most modern printers offer color printing. However, they can also be set to print in black and white. Color printers are more expensive to operate since they use two ink cartridges -- one color and one black ink -- or toners that need to be replaced after a certain number of pages are printed. Printing ink cartridges or toner cartridges are comprised of black, cyan, magenta and yellow ink. The ink can be mixed together, or it may come in separate monochrome solid ink printer cartridges, depending on the type of printer.<br>
+<b>Resolution:</b> Printer resolution -- the sharpness of text and images on paper -- is usually measured in dots per inch (dpi). Most inexpensive printers provide sufficient resolution for most purposes at 600 dpi.<br>
+<b>Speed: </b> If a user does a lot of printing, printing speed is an important feature. Inexpensive printers print only about 3 to 6 sheets per minute. However, faster printing speeds are an option with a more sophisticated, expensive printer.<br>
+<b>Memory:</b> Most printers come with a small amount of memory -- typically 2-16 megabytes- that can be expanded by the user. Having more than the minimum amount of memory is helpful and faster when printing out pages with large images.<br><br>
+<img src="print1.jpg" alt="printers" class="center"><br><br>
+<strong>Printer I/O interfaces</strong><br>
+The most common I/O interface for printers had been the parallel Centronics interface with a 36-pin plug.<br>
+
+Nowadays, however, printers and computers are likely to use a serial interface, especially a USB or FireWire with smaller and less cumbersome plugs.<br><br>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/C7COLOmkd90" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </p>
+
+    </div>
+
+
+  </div>
+
+</body>
+
+</html>

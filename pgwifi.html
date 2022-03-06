@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>TechFacts.com</title>
+  <link href='https://fonts.googleapis.com/css?family=Shizuru' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<style media="screen">
+  h1 {
+    font-size: 70px;
+  }
+
+  h2 {
+    font-size: 35px;
+    color: #072260;
+
+  }
+
+  strong {
+    padding: 20px;
+    font-size: 20px;
+    color: #043f6c;
+
+  }
+
+  p {
+    padding: 35px;
+
+  }
+
+  hr.ne {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: #e9e9e9;
+  }
+
+  .topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .topnav a.active {
+    background-color: #2cbd6c;
+    color: white;
+  }
+
+  .topnav .search-container {
+    float: right;
+  }
+
+  .topnav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+  }
+
+  .topnav .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .topnav .search-container button:hover {
+    background: #ccc;
+  }
+
+  @media screen and (max-width: 600px) {
+    .topnav .search-container {
+      float: none;
+    }
+
+    .topnav a,
+    .topnav input[type=text],
+    .topnav .search-container button {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+
+    .topnav input[type=text] {
+      border: 1px solid #ccc;
+    }
+  }
+
+  body {
+    font-family: "Lato", sans-serif;
+  }
+
+  .sidenav {
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #15d6e7;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidenav {
+      padding-top: 15px;
+    }
+
+    .sidenav a {
+      font-size: 18px;
+    }
+  }
+
+  body {
+    width: available;
+    height: available;
+  }
+
+  .container {
+    width: available;
+    height: available;
+  }
+
+  .leftpane {
+    width: 20%;
+    min-width: 350px;
+    height: 1px;
+    min-height: 400px;
+    float: left;
+    background-color: #1c042f;
+    border-collapse: collapse;
+  }
+
+  .middlepane {
+    width: 60%;
+    min-width: 800px;
+    height: available;
+    min-height: 650px;
+    float: left;
+    background-color: white;
+    border-collapse: collapse;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+  }
+</style>
+
+<body bgcolor="#1c042f">
+  <h1 align='center' style="color:#13dea9; font-family:Shizuru;"><i><b>TechFacts.com</b></i>
+  </h1>
+  <hr color='#3d80dd'>
+
+  <div class="topnav">
+    <a class="active" href="project1.html">Home</a>
+    <a href="news.html">News</a>
+    <a href="login.html">Login</a>
+    <a href="aboutus.html">AboutUs</a>
+    <a href="contactus.html">ContactUs</a>
+    <div class="search-container">
+      <form action="/action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+  </div>
+  <hr color='#3d80dd'><br>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <hr class="ne"> <a href="pgmsoffice.html">Microsoft Office suits</a>
+    <hr class="ne">
+    <a href="pgmic.html">Microphone and Audio interfaces</a>
+    <hr class="ne">
+    <a href="pgwifi.html">Wifi Connectivity</a>
+    <hr class="ne">
+    <a href="pgmob.html">Smartphones</a>
+    <hr class="ne">
+    <a href="pgpc.html"> PC and Laptops</a>
+    <hr class="ne">
+    <a href="pgprint.html">Printers and Scanners</a>
+    <hr class="ne">
+  </div>
+
+  <div id="main" class="leftpane">
+
+    <span style="font-size:30px;color:#13dea9;cursor:pointer" onclick="openNav()">&#9776; open</span>
+  </div>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+    }
+  </script>
+  <div class="container">
+
+
+    <div class="middlepane">
+      <h2 padding=" 32px" align='center' style="font-family:Josefin Sans;">Wifi Connectivity
+        <hr class="ne">
+      </h2>
+      <p style="padding: 35px;">
+        <strong>What is Wi-Fi?</strong><br>Everywhere you go, you’re likely to hear the term “Wi-Fi.” Maybe it’s the restaurant that claims to have free Wi-Fi or a friend who asks for the Wi-Fi password. You use Wi-Fi all the time, but there’s a good
+        chance that you don’t really know what it is or how it works. Some people might tell you that Wi-Fi is just another term for the internet, but that’s not exactly true.<br>There’s a lot to learn about how wireless technology works and how you
+        can use Wi-Fi to enhance your experience on the web.<br><br>
+        <strong>How does Wi-Fi work?</strong><br> <br><img src="wifi1.jpg" alt="How does Wi-Fi work" class="center"><br><br>
+        Although Wi-Fi is typically used to access the internet on portable devices like smartphones, tablets, or laptops, in actuality, Wi-Fi itself is used to connect to a router or other access point, which in turn provides internet access. Wi-Fi
+        is a wireless connection to that device, not the internet itself. It also provides access to a local network of connected devices, which is why you can print pictures wirelessly or look at a video feed from Wi-Fi connected cameras with no
+        need to be physically connected to them.<br>Instead of using wired connections like Ethernet, Wi-Fi uses radio waves to transmit information at specific frequencies, most typically at 2.4GHz and 5GHz. However, there are many others used in
+        more niche settings. Each frequency range has several channels that wireless devices can operate on, helping to spread the load so that individual devices don’t see their signals crowded or interrupted by other traffic — although that does
+        happen on busy networks.<br>
+        <strong>What is 802.11?</strong><br>Often talked about in conjunction with Wi-Fi, 802.11, or IEEE 802.11, a set of protocols specifies communications that can occur on a Wi-Fi network on various wireless frequencies.<br>
+
+        Before the recent change in the naming convention, 802.11 was also a significant component of naming each successive generation of Wi-Fi connectivity. Typically followed by a letter or series of letters, it continues to be part of the
+        technical name for each Wi-Fi generation. However, there are now simpler naming schemes used are now simpler naming schemes used, labeled by generations.<br><br>
+        <strong>What devices use Wi-Fi?</strong><br><br><img src="wifi2.jpg" alt="What devices use Wi-Fi?" class="center"><br><br>Wi-Fi devices are everywhere. Most routers offer Wi-Fi connectivity, and almost any product with smart functions relies
+        on it for a steady and robust connection to the internet. Virtually all modern smartphones support it, as do tablets, laptops, and some desktops. It can be added to computers using USB dongles too.<br>
+
+        Smart TVs almost always come with support for Wi-Fi connectivity, and many Internet of Things devices like smart fridges and cameras do too. There are also Wi-Fi printers, scanners, clocks, games consoles, digital radios, and even cars. The
+        use cases for Wi-Fi are near-infinite when you consider the vast array of connected services.<br>
+
+        There are also what you could call Wi-Fi-adjacent devices. These devices use radio waves very close to the traditional Wi-Fi spectrum but aren’t considered Wi-Fi because they don’t connect to the internet the same way. A good example would be
+        the Zigbee protocol, which was created for early low-power smart devices to communicate, and still exists in some forms today. Bluetooth is another example – it operates on the 2.4GHz frequency like Wi-Fi but is used for connecting two
+        short-range devices. Then, Wi-Fi Direct uses Wi-Fi signals for a private, direct connection but doesn’t create a more extensive online network.<br><br>
+        <strong>Moving to Wi-Fi 6</strong><br><br><img src="wifi3.jpg" alt="Moving to Wi-Fi 6" class="center"><br><br>Wi-Fi 6 is more than just a new naming convention — it’s also a massive upgrade to the Wi-Fi standard that is changing how Wi-Fi works. Some of the
+        important things that Wi-Fi 6 is bringing to Wi-Fi everywhere are:<br> <br> <strong style="color:#6761dd;">Lower latency:</strong>his means data will flow more smoothly with fewer delays, improving the experience overall.<br><br>
+        <strong style="color:#6761dd;">Much higher speeds:</strong>Wi-Fi 6 significantly improves data transfer speeds when connecting to a single device — our tests found a 60% improvement. But more than that, Wi-Fi 6 is designed to be used in more
+        crowded spaces where many people may be on the same network, so you should see a drastic improvement in public Wi-Fi, especially in crowded areas.<br><br>
+        <strong style="color:#6761dd;">Better battery life: </strong>Because Wi-Fi 6 has improved efficiency in locating and identifying devices, it contributes to overall better battery life for each device. This is because your device is now
+        spending less time searching for Wi-Fi.<br><br><strong style="color:#6761dd;">Better household Wi-Fi: </strong >Wi-Fi 6 and its advanced MU-MIMO is fantastic for average homes. Connect up to eight devices instead of shooting data at individual devices. The
+        high-quality connection has few problems and more stability. <br>
+
+        Wi-Fi 6-compatible routers are growing, but it’s not available for all devices. Technology upgrades still require some time to ensure all devices can use Wi-Fi 6 as their default. The 802.11 connection is still the top seller, but you can
+        switch when you want.
+        <br>
+        Your router and device need to be compatible with the standard to reap all the Wi-Fi 6 benefits. Unfortunately, there aren’t many compatible devices. Until technology catches up, Wi-Fi 6 won’t be a common standard for a while.<br></p>
+    </div>
+
+
+  </div>
+
+</body>
+
+</html>

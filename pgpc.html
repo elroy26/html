@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>TechFacts.com</title>
+  <link href='https://fonts.googleapis.com/css?family=Shizuru' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<style media="screen">
+  h1 {
+    font-size: 70px;
+  }
+
+  h2 {
+    font-size: 35px;
+    color: #072260;
+
+  }
+
+  strong {
+    padding: 20px;
+    font-size: 20px;
+    color: #043f6c;
+
+  }
+
+  p {
+    padding: 35px;
+
+  }
+
+  hr.ne {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: #e9e9e9;
+  }
+
+  .topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .topnav a.active {
+    background-color: #2cbd6c;
+    color: white;
+  }
+
+  .topnav .search-container {
+    float: right;
+  }
+
+  .topnav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+  }
+
+  .topnav .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .topnav .search-container button:hover {
+    background: #ccc;
+  }
+
+  @media screen and (max-width: 600px) {
+    .topnav .search-container {
+      float: none;
+    }
+
+    .topnav a,
+    .topnav input[type=text],
+    .topnav .search-container button {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+
+    .topnav input[type=text] {
+      border: 1px solid #ccc;
+    }
+  }
+
+  body {
+    font-family: "Lato", sans-serif;
+  }
+
+  .sidenav {
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #15d6e7;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidenav {
+      padding-top: 15px;
+    }
+
+    .sidenav a {
+      font-size: 18px;
+    }
+  }
+
+  body {
+    width: available;
+    height: available;
+  }
+
+  .container {
+    width: available;
+    height: available;
+  }
+
+  .leftpane {
+    width: 20%;
+    min-width: 350px;
+    height: 1px;
+    min-height: 400px;
+    float: left;
+    background-color: #1c042f;
+    border-collapse: collapse;
+  }
+
+  .middlepane {
+    width: 60%;
+    min-width: 800px;
+    height: available;
+    min-height: 650px;
+    float: left;
+    background-color: white;
+    border-collapse: collapse;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+  }
+</style>
+
+<body bgcolor="#1c042f">
+  <h1 align='center' style="color:#13dea9; font-family:Shizuru;"><i><b>TechFacts.com</b></i>
+  </h1>
+  <hr color='#3d80dd'>
+
+  <div class="topnav">
+    <a class="active" href="project1.html">Home</a>
+    <a href="news.html">News</a>
+    <a href="login.html">Login</a>
+    <a href="aboutus.html">AboutUs</a>
+    <a href="contactus.html">ContactUs</a>
+    <div class="search-container">
+      <form action="/action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+  </div>
+  <hr color='#3d80dd'><br>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <hr class="ne"> <a href="pgmsoffice.html">Microsoft Office suits</a>
+    <hr class="ne">
+    <a href="pgmic.html">Microphone and Audio interfaces</a>
+    <hr class="ne">
+    <a href="pgwifi.html">Wifi Connectivity</a>
+    <hr class="ne">
+    <a href="pgmob.html">Smartphones</a>
+    <hr class="ne">
+    <a href="pgpc.html"> PC and Laptops</a>
+    <hr class="ne">
+    <a href="pgprint.html">Printers and Scanners</a>
+    <hr class="ne">
+  </div>
+
+  <div id="main" class="leftpane">
+
+    <span style="font-size:30px;color:#13dea9;cursor:pointer" onclick="openNav()">&#9776; open</span>
+  </div>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+    }
+  </script>
+  <div class="container">
+
+
+    <div class="middlepane">
+      <h2 padding=" 32px" align='center' style="font-family:Josefin Sans;">PC and Laptops
+        <hr class="ne">
+      </h2>
+      <p style="padding: 35px;">
+        <strong>What is a computer?</strong><br>A computer is an electronic device that manipulates information, or data. It has the ability to store, retrieve, and process data. You may already know that you can use a computer to type documents, send email, play games, and browse the Web. You can also use it to edit or create spreadsheets, presentations, and even videos.<br><br>
+        <iframe width="754" height="380" src="https://www.youtube.com/embed/Cu3R5it4cQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe><br><br><br>
+        <strong>Hardware vs. software</strong><br>Before we talk about different types of computers, let's talk about two things all computers have in common: hardware and software.<br>
+        <b>Hardware </b>is any part of your computer that has a physical structure, such as the keyboard or mouse. It also includes all of the computer's internal parts, which you can see in the image below.<br><img src="pc1.jpg" alt="Hardware" class="center"><br><br>
+      <b>Software </b>  is any set of instructions that tells the hardware what to do and how to do it. Examples of software include web browsers, games, and word processors.<br>Everything you do on your computer will rely on both hardware and software. For example, right now you may be viewing this lesson in a web browser (software) and using your mouse (hardware) to click from page to page. As you learn about different types of computers, ask yourself about the differences in their hardware. As you progress through this tutorial, you'll see that different types of computers also often use different types of software.<br><br>
+      <strong>What are the different types of computers?</strong><br>When most people hear the word computer, they think of a personal computer such as a desktop or laptop. However, computers come in many shapes and sizes, and they perform many different functions in our daily lives. When you withdraw cash from an ATM, scan groceries at the store, or use a calculator, you're using a type of computer.<br><br><img src="pc2.jpg" alt="computers" class="center"><br><br>
+      <strong style="color:#6761dd;">Desktop computers</strong><br><img src="pc3.jpg" alt="desktops" class="center"><br><br>Many people use desktop computers at work, home, and school. Desktop computers are designed to be placed on a desk, and they're typically made up of a few different parts, including the computer case, monitor, keyboard, and mouse.<br><br>
+      <strong style="color:#6761dd;">Laptop computers</strong><br><img src="pc4.jpg" alt="laptops" class="center"><br><br>
+      The second type of computer you may be familiar with is a laptop computer, commonly called a laptop. Laptops are battery-powered computers that are more portable than desktops, allowing you to use them almost anywhere.<br><br>
+      <strong style="color:#6761dd;">Tablet computers</strong><br><img src="pc5.jpg" alt=" tablet" class="center"><br><br>Tablet computers—or tablets—are handheld computers that are even more portable than laptops. Instead of a keyboard and mouse, tablets use a touch-sensitive screen for typing and navigation. The iPad is an example of a tablet.<br><br>
+      <strong style="color:#6761dd;">Servers</strong><br><br><img src="pc6.jpg" alt="Servers" class="center"><br><br>A server is a computer that serves up information to other computers on a network. For example, whenever you use the Internet, you're looking at something that's stored on a server. Many businesses also use local file servers to store and share files internally.<br><br>
+
+
+      </p>
+
+    </div>
+
+
+  </div>
+
+</body>
+
+</html>

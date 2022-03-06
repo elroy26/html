@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>TechFacts.com</title>
+  <link href='https://fonts.googleapis.com/css?family=Shizuru' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<style media="screen">
+  h1 {
+    font-size: 70px;
+  }
+
+  h2 {
+    font-size: 35px;
+    color: #072260;
+
+  }
+
+  strong {
+    padding: 20px;
+    font-size: 20px;
+    color: #043f6c;
+
+  }
+
+  p {
+    padding: 35px;
+  }
+
+  hr.ne {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: #e9e9e9;
+  }
+
+  .topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .topnav a.active {
+    background-color: #2cbd6c;
+    color: white;
+  }
+
+  .topnav .search-container {
+    float: right;
+  }
+
+  .topnav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+  }
+
+  .topnav .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .topnav .search-container button:hover {
+    background: #ccc;
+  }
+
+  @media screen and (max-width: 600px) {
+    .topnav .search-container {
+      float: none;
+    }
+
+    .topnav a,
+    .topnav input[type=text],
+    .topnav .search-container button {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+
+    .topnav input[type=text] {
+      border: 1px solid #ccc;
+    }
+  }
+
+  body {
+    font-family: "Lato", sans-serif;
+  }
+
+  .sidenav {
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #15d6e7;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidenav {
+      padding-top: 15px;
+    }
+
+    .sidenav a {
+      font-size: 18px;
+    }
+  }
+
+  body {
+    width: available;
+    height: available;
+  }
+
+  .container {
+    width: available;
+    height: available;
+  }
+
+  .leftpane {
+    width: 20%;
+    min-width: 350px;
+    height: 1px;
+    min-height: 400px;
+    float: left;
+    background-color: #1c042f;
+    border-collapse: collapse;
+  }
+
+  .middlepane {
+    width: 60%;
+    min-width: 800px;
+    height: available;
+    min-height: 650px;
+    float: left;
+    background-color: white;
+    border-collapse: collapse;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+  }
+</style>
+
+<body bgcolor="#1c042f">
+  <h1 align='center' style="color:#13dea9; font-family:Shizuru;"><i><b>TechFacts.com</b></i>
+  </h1>
+  <hr color='#3d80dd'>
+
+  <div class="topnav">
+    <a class="active" href="project1.html">Home</a>
+    <a href="news.html">News</a>
+    <a href="login.html">Login</a>
+    <a href="aboutus.html">AboutUs</a>
+    <a href="contactus.html">ContactUs</a>
+    <div class="search-container">
+      <form action="/action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+  </div>
+  <hr color='#3d80dd'><br>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <hr class="ne"> <a href="pgmsoffice.html">Microsoft Office suits</a>
+    <hr class="ne">
+    <a href="pgmic.html">Microphone and Audio interfaces</a>
+    <hr class="ne">
+    <a href="pgwifi.html">Wifi Connectivity</a>
+    <hr class="ne">
+    <a href="pgmob.html">Smartphones</a>
+    <hr class="ne">
+    <a href="pgpc.html"> PC and Laptops</a>
+    <hr class="ne">
+    <a href="pgprint.html">Printers and Scanners</a>
+    <hr class="ne">
+  </div>
+
+  <div id="main" class="leftpane">
+
+    <span style="font-size:30px;color:#13dea9;cursor:pointer" onclick="openNav()">&#9776; open</span>
+  </div>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+    }
+  </script>
+  <div class="container">
+
+
+    <div class="middlepane">
+      <h2 padding=" 32px" align='center' style="font-family:Josefin Sans;">Microsoft Office suits
+        <hr class="ne">
+      </h2>
+      <p>Microsoft Office Suite, also known as Microsoft 365, is one of the most widely used computer software packages. More than one million companies from around the world use Microsoft 365, which includes applications like Word, Excel,
+        PowerPoint, and Outlook. No matter what Industry you work in, chances are you’ll use at least one of these apps on a regular basis. If you want a transferable skill that also makes you marketable to employers, take the time to learn the full
+        suite. It will help you do your job more efficiently, be a better employee, and make you feel like you’re a regular technological wizard.<br><br>
+
+        Here are the reasons you need to know Microsoft 365:<br><br>
+
+        <strong>You’ll Use Microsoft Office in Any Job</strong><br>No matter where you work, you’ll probably come across Microsoft 365. The Microsoft Office Suite is so common that there are versions compatible with both Windows and iOS. Once you
+        learn how to navigate the suite, you’ll have a skill that you’ll be able to take with you to any job in almost any industry.<br><br>
+        <strong>Microsoft Applications Continue to Evolve</strong><br>Bill Gates announced the debut of the Microsoft Office Suite back in 1988, and the software has continued to evolve ever since. Now the suite includes applications like OneNote,
+        Publisher, Access, and Teams—and who knows what applications may be introduced in the future. What does this mean for you? That now is a great time to learn how to use Microsoft 365! Once you develop your Suite skills, you’ll be able to keep
+        up with the added features and updates. And you’ll also feel more comfortable with what comes down the line when Microsoft rolls out something new.<br><br>
+        <strong>Microsoft Office Helps You Communicate with Co-Workers</strong><br>Microsoft offers a variety of communication tools that improve collaboration with your co-workers. Outlook is its email service and is commonly used by businesses to
+        send emails and schedule meetings. Over the past year, many businesses also started using Teams, which offers an instant messaging chat feature as well as video conferencing tools. It also allows team members to share and co-author documents
+        with each other.<br><br>
+        <strong>Microsoft Tools Enhance Productivity and Collaboration</strong><br>
+        Because of the tools that Microsoft 365 offers, you no longer have to draw a graph or write out a memo by hand. You can enter data into Excel and it will create a sleek-looking graph for you. You can use a Word or Publisher template to create
+        a professional report, or a PowerPoint template to create a presentation. You can also make edits, track changes, add notes, and share files directly from the apps for easier collaboration.<br><br>
+        <strong>Office applications</strong><br>
+        <strong style="color:#6761dd;">Microsoft Word</strong><br>Microsoft Word is a full-featured word processing program for Windows and Mac operating systems. See more on <a
+          href="https://www.microsoft.com/en-in/microsoft-365/word?rtc=1">Word with Microsoft 365</a> <br> <img src="unnamed.png" alt="Microsoft Word" class="center"><br><br>
+        <strong style="color:#6761dd;">Microsoft Excel</strong><br>Microsoft Excel is a spreadsheet program that features calculation, graphic tools, pivot tables, and macro programming language support for Windows and Mac operating systems. See more
+        on <a href="https://www.microsoft.com/en-in/microsoft-365/excel?rtc=1">Excel with Microsoft 365</a><br><img src="images.png" alt="Microsoft Excel" class="center"><br><br>
+
+        <strong style="color:#6761dd;">Microsoft PowerPoint</strong><br>Microsoft PowerPoint is a presentation program for Windows and Mac operating systems. See more on <a href="https://www.microsoft.com/en-in/microsoft-365/powerpoint?rtc=1"> PowerPoint with Microsoft 365</a><br><img src="MOS-Powerpoint-Logo-324x238-1.jpg" alt="Microsoft Excel" class="center"><br><br>
+      </p>
+
+    </div>
+
+
+  </div>
+
+</body>
+
+</html>
